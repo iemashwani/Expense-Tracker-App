@@ -15,6 +15,9 @@ mongoose
   .then(() => console.log("Database Connected"))
   .catch(() => console.log("Database not Connected"));
 
+import cookieParser from "cookie-parser";
+app.use(cookieParser());
+
 // app level middleware
 import morgan from "morgan";
 app.use(morgan("dev"));
